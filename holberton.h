@@ -7,6 +7,13 @@
 #include <string.h>
 #include <unistd.h>
 
+/**
+  * struct op - Struct op
+  *
+  * @op: The operator
+  * @f: The function associated
+  */
+
 typedef struct op
 {
 	char *op;
