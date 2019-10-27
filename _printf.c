@@ -20,6 +20,9 @@ int _printf(const char *format, ...)
 	int i = 0, j = 0, cont = 0;
 	va_list va;
 
+	if (format == NULL)
+		return (-1);
+
 	va_start(va, format);
 
 	for (i = 0; format != NULL && format[i] != '\0'; i++)
@@ -56,10 +59,12 @@ int st(va_list a)
 	char *st = va_arg(a, char *);
 	int i;
 
+	if(st == NULL)
+		st = "(null)";
+
 	for (i = 0; st[i] != '\0'; i++)
 		;
 	return (write(1, st, i));
-
 }
 
 /**

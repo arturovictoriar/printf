@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- *
+ i
  *iReturn: Always 0
  */
 int main(void)
@@ -15,6 +15,10 @@ int len2;
 /* void *addr; */
 
 
+printf("%d\n", _printf("Hola %s Hola\n", NULL));
+printf("%d\n", printf("Hola %s Hola\n", NULL));
+printf("%d\n", _printf(NULL));
+printf("%d\n", printf(NULL));
 len = _printf("Let's try to printf a simple sentence.\n");
 len2 = printf("Let's try to printf a simple sentence.\n");
 /* ui = (unsigned int)INT_MAX + 1024; */
