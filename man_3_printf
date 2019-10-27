@@ -1,17 +1,61 @@
-.TH man 2 "30 Oct 2019" "0.32" "_printf man page"
+.TH _PRINTF 1 "30 Oct 2019" "HOLBERTON 10 Cohort 1.0" "User Commands"
 .SH NAME
-.B _printf
-- become a full-stack software engineer.
+_printf
+- format and print data
 .SH SYNOPSIS
-holberton [STUDENTNAME]
+.B _printf
+.I FORMAT
+[
+.I ARGUMENT
+]...
 .SH DESCRIPTION
-Holberton School is a project-based alternative to college for the next generation of software engineers.
-.SH OPTIONS
-.B holberton
-does not take any options. However, you can supply studentname.
-.SH SEE ALSO
-.I peerlearning(2), projectbased(2), fullstack(2), Betty(1)
+Print ARGUMENT(s) according to FORMAT, or execute according to OPTION:
+.PP
+FORMAT controls the output as in C printf.  Interpreted sequences are:
+.PP
+\\"     double quote
+.PP
+\\\\     backslash
+.PP
+\\a     alert (BEL)
+.PP
+\\b     backspace
+.PP
+\\c     produce no further output
+.PP
+\\e     escape
+.PP
+\\f     form feed
+.PP
+\\n     new line
+.PP
+\\r     carriage return
+.PP
+\\t     horizontal tab
+.PP
+\\v     vertical tab
+.PP
+\\NNN   byte with octal value NNN (1 to 3 digits)
+.PP
+\\xHH   byte with hexadecimal value HH (1 to 2 digits)
+.PP
+\\uHHHH Unicode (ISO/IEC 10646) character with hex value HHHH (4 digits)
+.PP
+\\UHHHHHHHH
+.PP
+       Unicode character with hex value HHHHHHHH (8 digits)
+.PP
+%%     a single %
+.PP
+%b     ARGUMENT as a string with '\' escapes interpreted, except that octal escapes are of the form \0 or \0NNN
+.PP
+and all C format specifications ending with one of diouxXfeEgGcs, with ARGUMENTs converted to proper type first.  Variable widths are handled.
+.PP
+NOTE:  your  shell  may have its own version of printf, which usually supersedes the version described here.  Please refer to your shell's documentation for
+details about the options it supports.
+.SH AUTHOR
+Written by Arturo Victoria Rincon and Gonzalo Gomez Millan.
 .SH BUGS
 No known bugs.
-.SH AUTHOR
-Arturo Victoria Rincon and Gonzalo Gomez Millan
+.SH SEE ALSO
+.I printf(3)
