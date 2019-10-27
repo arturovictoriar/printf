@@ -1,9 +1,5 @@
 #include "holberton.h"
 
-int st(va_list a);
-int ch(va_list a);
-int por(va_list a);
-
 /**
   * _printf - fills memory with a constant byte
   * @format: is the string given
@@ -15,6 +11,8 @@ int _printf(const char *format, ...)
 	op_t o[] = {
 		{"c", ch},
 		{"s", st},
+		{"i", inte},
+		{"d", deci},
 		{"%", por},
 		{NULL, NULL},
 	};
@@ -24,14 +22,17 @@ int _printf(const char *format, ...)
 
 	va_start(va, format);
 
-	for (i = 0; format[i] != '\0'; i++)
+	for (i = 0; format != NULL && format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
 		{
 			for (j = 0; o[j].op != NULL; j++)
 			{
 				if (format[i + 1] == o[j].op[0])
+				{
 					cont += o[j].f(va);
+					break;
+				}
 			}
 			i++;
 		}
@@ -41,6 +42,7 @@ int _printf(const char *format, ...)
 			cont++;
 		}
 	}
+	va_end(va);
 	return (cont);
 }
 
@@ -79,8 +81,8 @@ int ch(va_list a)
   */
 int por(va_list a)
 {
-	char porce = va_arg(a, int);
+	char porce = '%';
 
-	porce = '%';
+	(void) a;
 	return (write(1, &porce, 1));
 }
