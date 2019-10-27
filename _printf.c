@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 		{"c", ch},
 		{"s", st},
 		{"i", inte},
-		{"d", deci},
+		{"d", inte},
 		{"%", por},
 		{NULL, NULL},
 	};

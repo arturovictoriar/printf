@@ -25,6 +25,5 @@ int st(va_list a);
 int ch(va_list a);
 int por(va_list a);
 int inte(va_list a);
-int deci(va_list a);
 
 #endif

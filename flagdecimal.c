@@ -37,31 +37,3 @@ int inte(va_list a)
 	free(number);
 	return (cant);
 }
-
-/**
-* deci - fills memory with a constant byte
-* @a: the value to print
-* Return: numbers of characters printed
-*/
-int deci(va_list a)
-{
-	int num = va_arg(a, int), i, j, cant = 0, dig = 0, num1 = 0;
-	char *number;
-
-	num1 = num;
-	for (i = 1; num1 / 10 != 0; i++)
-		num1 /= 10;
-
-	number = malloc(sizeof(char) * (i + 1));
-
-	for (j = 0; j < i; j++)
-	{
-		dig = num % 10;
-		number[(i - 1) - j] = dig + '0';
-		num /= 10;
-	}
-	number[j] = '\0';
-	cant = write(1, number, i);
-	free(number);
-	return (cant);
-}
