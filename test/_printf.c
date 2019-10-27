@@ -31,15 +31,10 @@ int _printf(const char *format, ...)
 				if (format[i + 1] == o[j].op[0])
 				{
 					cont += o[j].f(va);
-					i++;
 					break;
 				}
-				else
-				{
-					write(1, &(format[i]), 1);
-					cont++;
-				}
 			}
+			i++;
 		}
 		else
 		{
