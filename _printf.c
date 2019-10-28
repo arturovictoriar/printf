@@ -59,7 +59,7 @@ int st(va_list a)
 	char *st = va_arg(a, char *);
 	int i;
 
-	if(st == NULL)
+	if (st == NULL)
 		st = "(null)";
 
 	for (i = 0; st[i] != '\0'; i++)
