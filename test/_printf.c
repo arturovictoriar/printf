@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 	int i = 0, j = 0, cont = 0;
 	va_list va;
 
-	if (format == NULL)
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 	va_start(va, format);
 	for (i = 0; format != NULL && format[i] != '\0'; i++)
@@ -32,6 +32,7 @@ int _printf(const char *format, ...)
 				if (format[i + 1] == o[j].op[0])
 				{
 					cont += o[j].f(va);
+					i++;
 					break;
 				}
 				else
@@ -40,7 +41,6 @@ int _printf(const char *format, ...)
 						cont += _putc(format[i]);
 				}
 			}
-			i++;
 		}
 		else
 			cont += _putc(format[i]);
