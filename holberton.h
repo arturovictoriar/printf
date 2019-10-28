@@ -25,4 +25,5 @@ int ch(va_list a);
 int por(va_list a);
 int inte(va_list a);
 int _putc(char a);
+int bina(va_list a);
 #endif
