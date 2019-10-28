@@ -24,7 +24,7 @@ int bina(va_list a)
 		num /= 2;
 	}
 	binary[j] = '\0';
-	cant = write(1, binary, i);
+	cant = _write(1, binary, i);
 	free(binary);
 	return (cant);
 }

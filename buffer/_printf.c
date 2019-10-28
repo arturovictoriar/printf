@@ -31,6 +31,7 @@ int _printf(const char *format, ...)
 		else
 			cont += _putc(format[i]);
 	}
+	cont +=_write(-1, "c", 1);
 	va_end(va);
 	return (cont);
 }
@@ -42,7 +43,7 @@ int _printf(const char *format, ...)
   */
 int _putc(char a)
 {
-	return (write(1, &(a), 1));
+	return (_write(1, &(a), 1));
 }
 
 /**

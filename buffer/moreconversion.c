@@ -24,7 +24,7 @@ int octa(va_list a)
 		num /= 8;
 	}
 	octal[j] = '\0';
-	cant = write(1, octal, i);
+	cant = _write(1, octal, i);
 	free(octal);
 	return (cant);
 }
@@ -54,7 +54,7 @@ int unsig(va_list a)
 		num /= 10;
 	}
 	unsigne[j] = '\0';
-	cant = write(1, unsigne, i);
+	cant = _write(1, unsigne, i);
 	free(unsigne);
 	return (cant);
 }
@@ -88,7 +88,7 @@ int hexal(va_list a)
 		num /= 16;
 	}
 	hexadeci[j] = '\0';
-	cant = write(1, hexadeci, i);
+	cant = _write(1, hexadeci, i);
 	free(hexadeci);
 	return (cant);
 }
@@ -122,7 +122,7 @@ int hexau(va_list a)
 		num /= 16;
 	}
 	hexadeci[j] = '\0';
-	cant = write(1, hexadeci, i);
+	cant = _write(1, hexadeci, i);
 	free(hexadeci);
 	return (cant);
 }

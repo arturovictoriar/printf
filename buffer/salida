@@ -1,0 +1,130 @@
+0011111111111111111111111111111111011111111111111111111111111111111111110100011111111111111111111111111111111111110100-2147483648011111111111111111111111111111111111110100-21474836482147483647011111111111111111111111111111111111110100-214748364821474836470011111111111111111111111111111111111110100-214748364821474836470%yyyd
+011111111111111111111111111111111111110100-214748364821474836470%yyyd
+Hola (null) Hola
+011111111111111111111111111111111111110100-214748364821474836470%yyyd
+Hola (null) Hola
+Let's try to printf a simple sentence.
+011111111111111111111111111111111111110100-214748364821474836470%yyyd
+Hola (null) Hola
+Let's try to printf a simple sentence.
+Length:[126, 126]
+011111111111111111111111111111111111110100-214748364821474836470%yyyd
+Hola (null) Hola
+Let's try to printf a simple sentence.
+Length:[126, 126]
+Negative:[-762534]
+011111111111111111111111111111111111110100-214748364821474836470%yyyd
+Hola (null) Hola
+Let's try to printf a simple sentence.
+Length:[126, 126]
+Negative:[-762534]
+Unsigned:[2147484671]
+011111111111111111111111111111111111110100-214748364821474836470%yyyd
+Hola (null) Hola
+Let's try to printf a simple sentence.
+Length:[126, 126]
+Negative:[-762534]
+Unsigned:[2147484671]
+Unsigned octal:[20000001777]
+011111111111111111111111111111111111110100-214748364821474836470%yyyd
+Hola (null) Hola
+Let's try to printf a simple sentence.
+Length:[126, 126]
+Negative:[-762534]
+Unsigned:[2147484671]
+Unsigned octal:[20000001777]
+Unsigned hexadecimal:[800003ff, 800003FF]
+011111111111111111111111111111111111110100-214748364821474836470%yyyd
+Hola (null) Hola
+Let's try to printf a simple sentence.
+Length:[126, 126]
+Negative:[-762534]
+Unsigned:[2147484671]
+Unsigned octal:[20000001777]
+Unsigned hexadecimal:[800003ff, 800003FF]
+Character:[H]
+011111111111111111111111111111111111110100-214748364821474836470%yyyd
+Hola (null) Hola
+Let's try to printf a simple sentence.
+Length:[126, 126]
+Negative:[-762534]
+Unsigned:[2147484671]
+Unsigned octal:[20000001777]
+Unsigned hexadecimal:[800003ff, 800003FF]
+Character:[H]
+String:[I am a string !]
+011111111111111111111111111111111111110100-214748364821474836470%yyyd
+Hola (null) Hola
+Let's try to printf a simple sentence.
+Length:[126, 126]
+Negative:[-762534]
+Unsigned:[2147484671]
+Unsigned octal:[20000001777]
+Unsigned hexadecimal:[800003ff, 800003FF]
+Character:[H]
+String:[I am a string !]
+Percent:[%]
+011111111111111111111111111111111111110100-214748364821474836470%yyyd
+Hola (null) Hola
+Let's try to printf a simple sentence.
+Length:[126, 126]
+Negative:[-762534]
+Unsigned:[2147484671]
+Unsigned octal:[20000001777]
+Unsigned hexadecimal:[800003ff, 800003FF]
+Character:[H]
+String:[I am a string !]
+Percent:[%]
+Len:[307]
+011111111111111111111111111111111111110100-214748364821474836470%yyyd
+Hola (null) Hola
+Let's try to printf a simple sentence.
+Length:[126, 126]
+Negative:[-762534]
+Unsigned:[2147484671]
+Unsigned octal:[20000001777]
+Unsigned hexadecimal:[800003ff, 800003FF]
+Character:[H]
+String:[I am a string !]
+Percent:[%]
+Len:[307]
+Unknown:[%r]
+
+
+1
+%b2
+33
+%b2
+42
+%b2
+
+
+53
+-214748364811
+63
+214748364710
+64
+01
+
+
+-1
+-1
+70
+%yyyd
+6
+87
+Hola (null) Hola
+17
+-1
+-1
+Let's try to printf a simple sentence.
+Length:[39, 39]
+Negative:[-762534]
+Unsigned:[2147484671]
+Unsigned octal:[20000001777]
+Unsigned hexadecimal:[800003ff, 800003FF]
+Character:[H]
+String:[I am a string !]
+Percent:[%]
+Len:[12]
+Unknown:[%r]
