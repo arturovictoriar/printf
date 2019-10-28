@@ -15,7 +15,7 @@ int st(va_list a)
 
 	for (i = 0; st[i] != '\0'; i++)
 		;
-	return (write(1, st, i));
+	return (_write(1, st, i));
 }
 
 /**
@@ -27,7 +27,7 @@ int ch(va_list a)
 {
 	char st = va_arg(a, int);
 
-	return (write(1, &st, 1));
+	return (_write(1, &st, 1));
 }
 
 /**
@@ -40,5 +40,5 @@ int por(va_list a)
 	char porce = '%';
 
 	(void) a;
-	return (write(1, &porce, 1));
+	return (_write(1, &porce, 1));
 }

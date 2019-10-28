@@ -30,7 +30,7 @@ int inte(va_list a)
 	if (neg == 1)
 		number[0] = '-';
 	number[j + neg] = '\0';
-	cant = write(1, number, i + neg);
+	cant = _write(1, number, i + neg);
 	free(number);
 	return (cant);
 }
