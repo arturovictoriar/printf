@@ -11,12 +11,19 @@ int point(va_list a)
 	long i, j, cant = 0, hexa = 0;
 	char *hexadeci;
 
+	if (num == 0)
+	{
+		cant = _write(1, "(nil)", 5);
+		return (cant);
+	}
+
 	num1 = num;
 	for (i = 1; num1 / 16 != 0; i++)
 		num1 /= 16;
 
 	hexadeci = malloc(sizeof(char) * (i + 3));
 	if (hexadeci == NULL)
+
 		return (0);
 
 	hexadeci[0] = '0';
