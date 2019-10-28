@@ -93,6 +93,8 @@ printf("--\n");
 printf("--\n");
 printf("%d\n", printf("%p\n", &len));
 printf("%d\n", _printf("%p\n", &len));
+printf("%d\n", printf("%p\n", NULL));
+printf("%d\n", _printf("%p\n", NULL));
 printf("--\n");
 return (0);
 }
