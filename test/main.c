@@ -14,7 +14,14 @@ int len2;
 /* unsigned int ui; */
 /* void *addr; */
 
+printf("%d\n", _printf("%b", 0));
+printf("%d\n", printf("%b", 0));
+printf("%d\n", _printf("%b", 4294967295));
+printf("%d\n", printf("%b", 4294967295));
+printf("%d\n", _printf("%b", 500));
+printf("%d\n", printf("%b", 500));
 
+printf("\n\n");
 
 printf("%d\n", _printf("%d", -2147483648));
 printf("%d\n", printf("%d", -2147483648));

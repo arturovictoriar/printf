@@ -59,6 +59,7 @@ int (*equal(const char *format))()
 		{"i", inte},
 		{"d", inte},
 		{"%", por},
+		{"b", bina},
 		{NULL, NULL},
 	};
 
