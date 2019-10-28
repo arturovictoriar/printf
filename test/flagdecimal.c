@@ -12,11 +12,7 @@ int inte(va_list a)
 
 	num1 = num;
 	if (num1 < 0)
-	{
-		num1 *= -1;
-		num *= -1;
 		neg = 1;
-	}
 
 	for (i = 1; num1 / 10 != 0; i++)
 		num1 /= 10;
@@ -27,6 +23,7 @@ int inte(va_list a)
 	for (j = 0; j < i; j++)
 	{
 		dig = num % 10;
+		(neg) ? (dig *= -1) : (dig *= 1);
 		number[(i + neg - 1) - j] = dig + '0';
 		num /= 10;
 	}
