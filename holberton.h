@@ -13,14 +13,13 @@
   * @op: The operator
   * @f: The function associated
   */
-
 typedef struct op
 {
 	char *op;
 	int (*f)(va_list);
 } op_t;
-
 int _printf(const char *format, ...);
+int (*equal(const char *format))(va_list);
 int st(va_list a);
 int ch(va_list a);
 int por(va_list a);

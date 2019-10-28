@@ -8,17 +8,9 @@
 
 int _printf(const char *format, ...)
 {
-	op_t o[] = {
-		{"c", ch},
-		{"s", st},
-		{"i", inte},
-		{"d", inte},
-		{"%", por},
-		{NULL, NULL},
-	};
-
-	int i = 0, j = 0, cont = 0;
+	int i = 0, cont = 0;
 	va_list va;
+	int (*pp)();
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
@@ -27,20 +19,14 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			for (j = 0; o[j].op != NULL; j++)
+			pp = equal(format + i);
+			if (pp != NULL)
 			{
-				if (format[i + 1] == o[j].op[0])
-				{
-					cont += o[j].f(va);
-					i++;
-					break;
-				}
-				else
-				{
-					if (o[j + 1].op == NULL)
-						cont += _putc(format[i]);
-				}
+				cont += pp(va);
+				i++;
 			}
+			else
+					cont += _putc(format[i]);
 		}
 		else
 			cont += _putc(format[i]);
@@ -60,44 +46,24 @@ int _putc(char a)
 }
 
 /**
-  * st - fills memory with a constant byte
-  * @a: the value to print
+  * equal - fills memory with a constant byte
+  * @format: the value to print
   * Return: numbers of characters printed
   */
-int st(va_list a)
+int (*equal(const char *format))()
 {
-	char *st = va_arg(a, char *);
-	int i;
+	int j;
+	op_t o[] = {
+		{"c", ch},
+		{"s", st},
+		{"i", inte},
+		{"d", inte},
+		{"%", por},
+		{NULL, NULL},
+	};
 
-	if (st == NULL)
-		st = "(null)";
-
-	for (i = 0; st[i] != '\0'; i++)
-		;
-	return (write(1, st, i));
-}
-
-/**
-  * ch - fills memory with a constant byte
-  * @a: the value to print
-  * Return: numbers of characters printed
-  */
-int ch(va_list a)
-{
-	char st = va_arg(a, int);
-
-	return (write(1, &st, 1));
-}
-
-/**
-  * por - fills memory with a constant byte
-  * @a: the value to print
-  * Return: numbers of characters printed
-  */
-int por(va_list a)
-{
-	char porce = '%';
-
-	(void) a;
-	return (write(1, &porce, 1));
+	for (j = 0; o[j].op != NULL; j++)
+		if (format[1] == o[j].op[0])
+			return (o[j].f);
+	return (o[j].f);
 }
