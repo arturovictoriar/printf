@@ -15,6 +15,8 @@ int len2;
 /* void *addr; */
 
 
+printf("%d\n", printf("%s"));
+printf("%d\n", _printf("%s"));
 printf("%d\n", _printf("%zzzzzd\n"));
 printf("%d\n", printf("%zzzzzd\n"));
 printf("%d\n", _printf("Hola %s Hola\n", NULL));
