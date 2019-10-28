@@ -68,7 +68,7 @@ locale.
 .RE
 The character % is followed by zero or more of the following flags:
 .PP
-#      The value should be converted to an "alternate form".  For o conversions,  the first character of the output  string
+#      The value should be converted to an "alternate form".  For o conversions,  the first character of the output string
 .RS +7
 is made zero (by prefixing a 0 if it was not zero already). For x and X conversions, a nonzero result has the string
 "0x" (or "0X" for X conversions) prepended to it.  For a, A, e, E, f, F, g, and G conversions, the result will always
@@ -77,13 +77,13 @@ conversions only if a digit follows). For g and G conversions, trailing zeros ar
 would otherwise be.  For other conversions, the result is undefined.
 .RE
 .PP
-0      The value should be zero padded.  For d, i, o, u, x, X, a, A, e, E, f, F, g, and G conversions, the converted  value
+0      The value should be zero padded.  For d, i, o, u, x, X, a, A, e, E, f, F, g, and G conversions, the converted value
 .RS +7
 is padded on the left with zeros rather than blanks. If the 0 and - flags both appear, the 0 flag is ignored. If a precision
 is given with a numeric conversion (d, i, o, u, x, and X), the 0 flag is ignored. For other conversions, the behavior is undefined.
 .RE
 .PP
--      The converted value is to be  left adjusted on the field  boundary.  (The default is  right  justification.)  Except
+-      The converted value is to be  left adjusted on the field  boundary. (The default is  right  justification.)  Except
 .RS +7
 for  n  conversions, the converted value is padded on the right with blanks, rather than on the left with blanks or zeros. A
 - overrides a 0 if both are given.
@@ -91,7 +91,7 @@ for  n  conversions, the converted value is padded on the right with blanks, rat
 .PP
 ' '    (a space) A blank should be left before a positive number (or empty string) produced by a signed conversion.
 .PP
-+      A sign (+ or -) should always be placed before a number produced by a signed conversion.  By default a sign is  used
++      A sign (+ or -) should always be placed before a number produced by a signed conversion.  By default a sign is used
        only for negative numbers.  A + overrides a space if both are used.
 .PP
 The five flag characters above are defined in the C standard.  The SUSv2 specifies one further flag character.
@@ -181,7 +181,7 @@ its, it is padded on the left with zeros. The default precision is 1. When 0 is 
 0, the output is empty.
 .RE
 .PP
-e, E   The double argument is rounded and converted in the style [-]d.dddedd where there is one digit before the decimal-
+e, E   The double argument is rounded and converted in the style [-]d.dddedd where there is one digit before the decimal
        point  character  and  the  number of digits after it is equal to the precision; if the precision is missing, it is
        taken as 6; if the precision is zero, no decimal-point character appears.   An  E  conversion  uses  the  letter  E
        (rather than e) to introduce the exponent.  The exponent always contains at least two digits; if the value is zero,
@@ -251,7 +251,7 @@ int main()
 	char n* = "Pedro";
 .RE
 .RS +4
-    _printf("Nombre: %s", n);
+    return (_printf("Nombre: %s", n));
 .RE
 .RS +4
 }
