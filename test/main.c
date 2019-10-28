@@ -15,6 +15,16 @@ int len2;
 /* void *addr; */
 
 
+
+printf("%d\n", _printf("%d", -2147483648));
+printf("%d\n", printf("%d", -2147483648));
+printf("%d\n", _printf("%d", 2147483647));
+printf("%d\n", printf("%d", 2147483647));
+printf("%d\n", _printf("%d", 0));
+printf("%d\n", printf("%d", 0));
+
+printf("\n\n");
+
 printf("%d\n", _printf("%"));
 printf("%d\n", _printf("%"));
 printf("%d\n", _printf("%yyyd\n"));
