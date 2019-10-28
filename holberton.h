@@ -31,4 +31,5 @@ int unsig(va_list a);
 int hexal(va_list a);
 int hexau(va_list a);
 int _write(int file, char *data, int lenght);
+int sst(va_list a);
 #endif
