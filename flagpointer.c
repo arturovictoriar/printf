@@ -7,7 +7,7 @@
 */
 int point(va_list a)
 {
-	long num = (long)va_arg(a, void *), num1 = 0;
+	unsigned long num = (unsigned long)va_arg(a, void *), num1 = 0;
 	long i, j, cant = 0, hexa = 0;
 	char *hexadeci;
 
