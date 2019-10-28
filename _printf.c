@@ -32,6 +32,7 @@ int _printf(const char *format, ...)
 				if (format[i + 1] == o[j].op[0])
 				{
 					cont += o[j].f(va);
+					i++;
 					break;
 				}
 				else
@@ -40,7 +41,6 @@ int _printf(const char *format, ...)
 						cont += _putc(format[i]);
 				}
 			}
-			i++;
 		}
 		else
 			cont += _putc(format[i]);
