@@ -3,12 +3,9 @@
 _printf
 - format and print data
 .SH SYNOPSIS
-.B _printf
-.I FORMAT
-[
-.I ARGUMENT
-]...
-.B _printf
+.DS
+\fB _printf \fP \fIFORMAT\fP [ \fIARGUMENT\fP ] ...
+\fB _printf \fP
 .SH DESCRIPTION
 Print ARGUMENT(s) according to FORMAT, or execute according to OPTION:
 .PP
