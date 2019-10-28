@@ -90,5 +90,9 @@ printf("--\n");
 printf("%d\n", _printf("%S\n", "Holberton\nSchool"));
 printf("%d\n", _printf("%S\n", "Holberton\x7FSchool"));
 printf("--\n");
+printf("--\n");
+printf("%d\n", printf("%p\n", &len));
+printf("%d\n", _printf("%p\n", &len));
+printf("--\n");
 return (0);
 }
