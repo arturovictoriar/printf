@@ -65,6 +65,7 @@ int (*equal(const char *format))()
 		{"u", unsig},
 		{"x", hexal},
 		{"X", hexau},
+		{"S", sst},
 		{NULL, NULL},
 	};
 
