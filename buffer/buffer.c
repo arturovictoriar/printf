@@ -9,8 +9,8 @@
  * Return: Lenght printed
  */
 int _write(int file, char *data, int lenght)
-{ 
-	static int	count = 0;
+{
+	static int	count;
 	static char	buffer[1024] = "";
 	int i, r = 0;
 
@@ -31,4 +31,4 @@ int _write(int file, char *data, int lenght)
 		}
 	}
 	return (r);
-} 
+}
