@@ -22,9 +22,7 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
-
 	va_start(va, format);
-
 	for (i = 0; format != NULL && format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
@@ -36,17 +34,29 @@ int _printf(const char *format, ...)
 					cont += o[j].f(va);
 					break;
 				}
+				else
+				{
+					if (o[j + 1].op == NULL)
+						cont += _putc(format[i]);
+				}
 			}
 			i++;
 		}
 		else
-		{
-			write(1, &(format[i]), 1);
-			cont++;
-		}
+			cont += _putc(format[i]);
 	}
 	va_end(va);
 	return (cont);
+}
+
+/**
+  * _putc - fills memory with a constant byte
+  * @a: the value to print
+  * Return: numbers of characters printed
+  */
+int _putc(char a)
+{
+	return (write(1, &(a), 1));
 }
 
 /**
