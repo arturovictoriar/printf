@@ -26,4 +26,8 @@ int por(va_list a);
 int inte(va_list a);
 int _putc(char a);
 int bina(va_list a);
+int octa(va_list a);
+int unsig(va_list a);
+int hexal(va_list a);
+int hexau(va_list a);
 #endif

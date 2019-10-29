@@ -60,6 +60,10 @@ int (*equal(const char *format))()
 		{"d", inte},
 		{"%", por},
 		{"b", bina},
+		{"o", octa},
+		{"u", unsig},
+		{"x", hexal},
+		{"X", hexau},
 		{NULL, NULL},
 	};
 
