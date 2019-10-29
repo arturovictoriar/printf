@@ -7,6 +7,9 @@
 #include <string.h>
 #include <unistd.h>
 
+#define  BUF_SIZE 1024
+#define  FLUSH -1
+
 /**
   * struct op - Struct op
   *
