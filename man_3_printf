@@ -156,6 +156,10 @@ s      If no l modifier is present: The const char * argument is expected to be 
 .PP
 p      The void * pointer argument is printed in hexadecimal (as if by %#x or %#lx).
 .PP
+r      It is the same working that 's' but print the array given in reverse.
+.PP
+R      It is the same working that 's' but convert the array in rot13 and print it.
+.PP
 n      The number of characters written so far is stored into the integer indicated by  the  int *  (or  variant)  pointer
        argument.  No argument is converted.
 .PP
