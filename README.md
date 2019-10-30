@@ -56,7 +56,7 @@ This file contains all the prototipes, structures and libraries used in [_printf
 This file contains the manual of the [_printf](https://github.com/arvicrin/printf)  project.
 
 ## Reference 
-To see full description of this project, go to [man_3_printf](https://github.com/arvicrin/printf/blob/master/man_3_printf "man_3_printf") of this [https://github.com/arvicrin/printf](https://github.com/arvicrin/printf) repository.
+To see full description of this project, go to [man_3_printf](https://github.com/arvicrin/printf/blob/master/man_3_printf "man_3_printf") of this [_printf](https://github.com/arvicrin/printf) repository.
 
 ## Autors
 **_printf project** made by Arturo Victoria Rincón and Gonzalo Gómez Millán

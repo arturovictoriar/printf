@@ -33,4 +33,6 @@ int hexau(va_list a);
 int _write(int file, char *data, int lenght);
 int sst(va_list a);
 int point(va_list a);
+int rot13(va_list a);
+int reve(va_list a);
 #endif
