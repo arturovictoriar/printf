@@ -15,7 +15,7 @@ unsigned int ui;
 /* void *addr; */
 
 printf("\n\n");
-printf("%d\n", _printf("%R\n", "Arturo"));
+printf("%d\n", _printf("%R\n", "Arturo 23 orutrA"));
 printf("\n\n");
 printf("%d\n", _printf("%b", 0));
 printf("%d\n", printf("%b", 0));

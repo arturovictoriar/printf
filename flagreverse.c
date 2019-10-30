@@ -8,7 +8,7 @@
 int reve(va_list a)
 {
 	char *st = va_arg(a, char *), *rever;
-	int i, j;
+	int i, j, cont;
 
 	if (st == NULL)
 		st = "(null)";
@@ -21,5 +21,7 @@ int reve(va_list a)
 	for (j = 0; j < i; j++)
 		rever[(i - 1) - j] = st[j];
 	rever[j] = '\0';
-	return (_write(1, rever, i));
+	cont = _write(1, rever, i);
+	free(rever);
+	return (cont);
 }
