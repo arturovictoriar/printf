@@ -1,4 +1,6 @@
 # _printf description funtions
+The  _printf()  function produce output according to a format as described below.  The function printf() write output to stdout, the standard output stream.  This function write the output under the control  of  a  format string  that  specifies  how   subsequent   arguments  (or arguments accessed via the variable-length argument facilities of stdarg(3)) are converted for output.
+
 This document stores a simple description of each function of each file in [_printf](https://github.com/arvicrin/printf) repository.
 
 ## Files
@@ -10,8 +12,10 @@ This document stores a simple description of each function of each file in [_pri
 - [flagpointer.c](https://github.com/arvicrin/printf/blob/master/flagpointer.c "flagpointer.c")
 - [flagspecialstring.c](https://github.com/arvicrin/printf/blob/master/flagspecialstring.c "flagspecialstring.c")
 - [flagstring.c](https://github.com/arvicrin/printf/blob/master/flagstring.c "flagstring.c")
-- [holberton.h](https://github.com/arvicrin/printf/blob/master/holberton.h "holberton.h")
 - [moreconversion.c](https://github.com/arvicrin/printf/blob/master/moreconversion.c "moreconversion.c")
+- [flagreverse.c](https://github.com/arvicrin/printf/blob/master/flagreverse.c "flagreverse.c")
+- [flagrot13.c](https://github.com/arvicrin/printf/blob/master/flagrot13.c "flagrot13.c")
+- [holberton.h](https://github.com/arvicrin/printf/blob/master/holberton.h "holberton.h")
 - [man_3_printf](https://github.com/arvicrin/printf/blob/master/man_3_printf "man_3_printf")
 ## Funtions
 ### Funtions in [_printf.c](https://github.com/arvicrin/printf/blob/master/_printf.c "_printf.c") file
@@ -44,7 +48,7 @@ This document stores a simple description of each function of each file in [_pri
 
 - **int reve(va_list a)**: convert a string to its reverse.
 
-### Funtions in [flagrot13.c](https://github.com/arvicrin/printf/blob/master/man_3_printf "flagrot13.c") file
+### Funtions in [flagrot13.c](https://github.com/arvicrin/printf/blob/master/flagrot13.c "flagrot13.c") file
 
 - **int  rot13(va_list a)**: convert a string in rot13.
 
